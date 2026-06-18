@@ -1,0 +1,14 @@
+# 로컬 에이전트/에디터 설정
+.claude/
+.cursor/
+.vscode/
+
+# OS 생성 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# 로그/임시
+*.log
+*.tmp

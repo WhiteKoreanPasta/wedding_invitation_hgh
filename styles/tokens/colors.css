@@ -1,0 +1,71 @@
+/* ───────────────────────────────────────────────────────────
+   COLORS — 청첩장
+   화이트 / 아이보리 베이스, 차콜 잉크, 차분한 로즈 강조색, 부드러운
+   골드 장식. 여백감 있고 단정하며 우아한 모바일 청첩장을 위한 색.
+   ─────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── 종이 / 표면 (기본) ────────────────────────────────── */
+  --paper:        #FFFFFF;   /* 순백 페이지 */
+  --paper-warm:   #FCFBF8;   /* 옅은 아이보리 — 기본 페이지 톤 */
+  --paper-sink:   #F5F2EC;   /* 번갈아 쓰는 섹션 배경 */
+  --paper-veil:   #FAF7F2;   /* sink 섹션 위에 올라가는 카드 */
+
+  /* ── 잉크 / 텍스트 (기본) ──────────────────────────────── */
+  --ink-1:        #2B2926;   /* 기본 텍스트 — 따뜻한 거의 검정 */
+  --ink-2:        #6E6A62;   /* 보조 텍스트 */
+  --ink-3:        #A39E94;   /* 흐린 글자 / 캡션 / 플레이스홀더 */
+  --ink-on-accent:#FFFFFF;   /* 로즈 배경 위 텍스트 */
+
+  /* ── 선 / 테두리 (기본) ────────────────────────────────── */
+  --line:         #E8E3D9;   /* 얇은 테두리, 구분선 */
+  --line-soft:    #F0ECE3;   /* 옅은 내부 선 */
+  --line-strong:  #D6CFC1;   /* 강조된 얇은 선 */
+
+  /* ── 로즈 강조색 (주색) ────────────────────────────────── */
+  --rose-700:     #7E4A55;   /* 눌림 / 강한 텍스트 강조 */
+  --rose-600:     #97606B;   /* 호버 */
+  --rose-500:     #B07C87;   /* 기본 강조색 */
+  --rose-300:     #D9B9C0;   /* 부드러운 채움, 링 */
+  --rose-100:     #EFDFE3;   /* 옅게 깔린 배경 */
+  --rose-50:      #F8F0F2;   /* 가장 옅은 색조 */
+
+  /* ── 골드 장식 (보조색) ────────────────────────────────── */
+  --gold-600:     #A98A57;   /* 장식 선, 얇은 모티프 */
+  --gold-400:     #C7AC80;   /* 더 밝은 장식 */
+  --gold-100:     #EFE7D8;   /* 골드 색조 */
+
+  /* ── 블러시 (따뜻함 — 하트, 강조, 절제해서 사용) ───────── */
+  --blush-500:    #C99089;   /* 하트 / 사랑 강조 */
+  --blush-100:    #F3E4E1;   /* 블러시 색조 */
+
+  /* ── 기능색 ────────────────────────────────────────────── */
+  --positive:     #5E7E63;   /* RSVP 참석 확정 */
+  --negative:     #B5675E;   /* RSVP 불참 / 오류 */
+
+  /* ── 시맨틱 별칭 (컴포넌트에서는 이것을 사용) ──────────── */
+  --text-primary:    var(--ink-1);
+  --text-secondary:  var(--ink-2);
+  --text-muted:      var(--ink-3);
+  --text-accent:     var(--rose-600);
+  --text-on-accent:  var(--ink-on-accent);
+
+  --surface-page:    var(--paper-warm);
+  --surface-page-pure: var(--paper);
+  --surface-alt:     var(--paper-sink);
+  --surface-card:    var(--paper);
+  --surface-card-alt:var(--paper-veil);
+  --surface-tint:    var(--rose-50);
+
+  --border:          var(--line);
+  --border-soft:     var(--line-soft);
+  --border-strong:   var(--line-strong);
+  --ornament:        var(--gold-400);
+  --ornament-strong: var(--gold-600);
+
+  --accent:          var(--rose-500);
+  --accent-hover:    var(--rose-600);
+  --accent-press:    var(--rose-700);
+  --accent-tint:     var(--rose-100);
+  --accent-ring:     var(--rose-300);
+}

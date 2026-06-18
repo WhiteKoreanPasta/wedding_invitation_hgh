@@ -1,0 +1,55 @@
+/* ───────────────────────────────────────────────────────────
+   TYPOGRAPHY — 청첩장
+   모바일 우선 스케일 (375px 기준 설계). 이름과 중요한 순간엔 명조,
+   본문과 UI엔 Pretendard 산세리프, 라틴 표시 라벨엔 Cormorant.
+   ─────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── 폰트 패밀리 ───────────────────────────────────────── */
+  --font-serif:       'Nanum Myeongjo', 'Gowun Batang', serif;       /* 이름, 중요한 순간 */
+  --font-serif-soft:  'Gowun Batang', 'Nanum Myeongjo', serif;       /* 모시는 글 본문, 더 부드러운 명조 */
+  --font-sans:        'Pretendard', 'Pretendard Variable', -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; /* 본문 & UI */
+  --font-latin:       'Cormorant Garamond', 'Nanum Myeongjo', serif; /* 영문 날짜, 아이브로우 라벨 */
+
+  /* ── 굵기 ──────────────────────────────────────────────── */
+  --w-light:   300;
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-bold:    700;
+  --w-black:   800;
+
+  /* ── 크기 단계 (모바일) ────────────────────────────────── */
+  --text-2xs:    11px;   /* 아주 작은 캡션, 복사 힌트 */
+  --text-xs:     12px;   /* 라벨, 메타 정보 */
+  --text-sm:     13px;   /* 보조 본문, 작은 버튼 */
+  --text-base:   15px;   /* 기본 본문 */
+  --text-md:     16px;   /* 강조 본문, 컨트롤 */
+  --text-lg:     18px;   /* 리드 문구, 소제목 */
+  --text-xl:     22px;   /* 섹션 제목 */
+  --text-2xl:    28px;   /* 목록 속 이름, 큰 제목 */
+  --text-3xl:    34px;   /* 표지 보조 디스플레이 */
+  --text-display:44px;   /* 표지 이름 / 히어로 순간 */
+
+  /* ── 행간 ──────────────────────────────────────────────── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.4;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.9;   /* 모시는 글 문단에 여유를 줌 */
+
+  /* ── 자간 ──────────────────────────────────────────────── */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide:   0.06em;
+  --tracking-wider:  0.14em;   /* 아이브로우 라벨, 대문자 라틴 */
+  --tracking-widest: 0.28em;   /* 자간 넓힌 섹션 아이브로우 */
+
+  /* ── 시맨틱 역할 ───────────────────────────────────────── */
+  --type-eyebrow-family:  var(--font-latin);
+  --type-eyebrow-size:    var(--text-xs);
+  --type-eyebrow-spacing: var(--tracking-widest);
+
+  --type-display-family:  var(--font-serif);
+  --type-title-family:    var(--font-serif);
+  --type-body-family:     var(--font-sans);
+  --type-greeting-family: var(--font-serif-soft);
+}

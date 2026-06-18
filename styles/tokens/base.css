@@ -1,0 +1,59 @@
+/* ───────────────────────────────────────────────────────────
+   BASE — 가벼운 리셋 + 브랜드 기본값 + 몇 가지 청첩장 헬퍼.
+   ─────────────────────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── 아이브로우: 한글 섹션 제목 위에 놓이는 자간 넓은 라틴 라벨 ── */
+.inv-eyebrow {
+  font-family: var(--font-latin);
+  font-size: var(--type-eyebrow-size);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--type-eyebrow-spacing);
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+
+/* ── 섹션 제목 (한글 명조) ── */
+.inv-title {
+  font-family: var(--font-serif);
+  font-weight: var(--w-bold);
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-primary);
+}
+
+/* ── 모시는 글 문단 — 여백감 있게, 가운데 정렬, 부드러운 명조 ── */
+.inv-greeting {
+  font-family: var(--font-serif-soft);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-secondary);
+  text-align: center;
+  text-wrap: pretty;
+}
+
+/* ── 스크롤 등장 효과: 기본은 숨김 상태, .is-in 추가 시 표시 ── */
+.inv-reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-rise));
+  transition: opacity var(--dur-slow) var(--ease-out),
+              transform var(--dur-slow) var(--ease-out);
+}
+.inv-reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .inv-reveal { opacity: 1; transform: none; transition: none; }
+}
