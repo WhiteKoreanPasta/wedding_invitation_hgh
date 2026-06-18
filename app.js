@@ -81,7 +81,9 @@
     './images/07_sea_03.jpg',
     './images/08_sea_04.jpg',
     './images/09_sea_05.jpg',
-    './images/10_wedding_01.jpg'
+    './images/10_wedding_01.jpg',
+    './images/11_wedding_02.jpg',
+    './images/12_sea_06.jpg'
   ];
   function renderGallery(el) {
     var html = '';

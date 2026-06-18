@@ -58,8 +58,8 @@ This is a zero-build static site, so GitHub Pages serves the files as-is — no 
 2. GitHub 저장소 → **Settings → Pages → Build and deployment → Source: Deploy from a branch** 선택.
 3. **Branch: `main` / `/ (root)`** 로 저장.
 4. 잠시 후 배포 URL 확인:
-   - 사용자/조직 페이지: `https://<username>.github.io`
-   - 프로젝트 페이지: `https://<username>.github.io/<repo>/`
+  - 사용자/조직 페이지: `https://<username>.github.io`
+  - 프로젝트 페이지: `https://<username>.github.io/<repo>/`
 
 ### Kakao Map 도메인 등록 (필수)
 
@@ -74,3 +74,4 @@ This is a zero-build static site, so GitHub Pages serves the files as-is — no 
 
 - **Fonts load from CDN** (Pretendard via jsDelivr; Nanum Myeongjo / Gowun Batang / Cormorant Garamond via Google Fonts). For an offline build, self-host the `.woff2` files and repoint `styles/tokens/fonts.css`.
 - **Kakao Map appkey** — `index.html`의 SDK `<script>`에 JavaScript 키가 들어 있습니다. JS 키는 공개 전제이며, **카카오 콘솔의 Web 도메인 등록**으로 보호합니다. 설정 절차는 위 "Deploying to GitHub Pages" 참고.
+
